@@ -21,7 +21,7 @@ function distanceTravelledInFeet(begin, dest){
 
 function calculatesFarePrice(start, destination){
   let distfeet = distanceTravelledInFeet(start, destination)
-  if (destination - start == 1 || start - destination == 1) {
+  if (distfeet < 400) {
     return 0
   }
   else if (distfeet > 2500) {
